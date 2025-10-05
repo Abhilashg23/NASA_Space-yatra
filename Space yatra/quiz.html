@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#000011">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Fun Zone (Quiz) - Space Yatra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-section">
+                <div class="menu-button" id="menuButton">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="menu-text" id="menuText">Explore Here</div>
+            </div>
+            <div class="nav-dropdown" id="navDropdown">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="space-weather.html" class="nav-item">What is Space Weather?</a>
+                <a href="impacts.html" class="nav-item">Impacts </a>
+                <a href="stories.html" class="nav-item">Stories </a>
+                <a href="live-data.html" class="nav-item">Live Space Weather Data</a>
+                <a href="quiz.html" class="nav-item">Fun Zone (Quiz)</a>
+                <a href="#" class="nav-item" id="aboutUsMenuItem">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About Us Panel -->
+    <div class="about-panel" id="aboutPanel">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>About Us</h2>
+                <button class="close-button" id="closeButton">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="team-info">
+                <h3>Team Name: Bit2Byte</h3>
+                <div class="team-members">
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Abhilash G</span>
+                        <span class="email">abhilashg9113@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Anirudh S Negekar</span>
+                        <span class="email">katoki317@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Prajnavi</span>
+                        <span class="email">prajnavimuniyal@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Tulasi Shetty</span>
+                        <span class="email">tulasishettyhebri@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Vaishnavi N Acharya</span>
+                        <span class="email">nvaishnavi622@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.location.href='index.html'">
+        <i class="fas fa-arrow-left"></i>
+        Back to Home
+    </button>
+
+    <!-- Main Content -->
+    <main class="quiz-main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="page-title">Star Quiz Challenge: Are You a Space Explorer?</h1>
+                <p class="page-subtitle">Test your space weather knowledge with fun interactive quizzes!</p>
+            </div>
+            <div class="quiz-elements">
+                <div class="floating-star star-1"></div>
+                <div class="floating-star star-2"></div>
+                <div class="floating-star star-3"></div>
+                <div class="floating-star star-4"></div>
+                <div class="floating-star star-5"></div>
+            </div>
+        </section>
+
+        <!-- Quiz Container -->
+        <section class="quiz-container">
+            <div class="container">
+                <!-- Quiz Selection Screen -->
+                <div class="quiz-selection" id="quizSelection">
+                    <div class="selection-content">
+                        <h2>Choose Your Space Adventure Quiz!</h2>
+                        <p>Pick which space weather story you'd like to explore:</p>
+                        
+                        <div class="quiz-cards">
+                            <!-- Sun Storms Quiz Card -->
+                            <div class="quiz-card" data-quiz="sun-storms">
+                                <div class="quiz-card-icon">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <h3>The Magical Sun Storms</h3>
+                                <p>Test your knowledge about Mia and Leo's space weather adventure!</p>
+                                <div class="quiz-info">
+                                    <span><i class="fas fa-question-circle"></i> 5 Questions</span>
+                                    <span><i class="fas fa-clock"></i> No time limit</span>
+                                </div>
+                                <button class="select-quiz-btn" data-quiz="sun-storms">
+                                    <i class="fas fa-play"></i>
+                                    Start Quiz
+                                </button>
+                            </div>
+
+                            <!-- Zoomy Quiz Card -->
+                            <div class="quiz-card" data-quiz="zoomy">
+                                <div class="quiz-card-icon">
+                                    <i class="fas fa-satellite"></i>
+                                </div>
+                                <h3>Wave to Zoomy: The Satellite in the Sky</h3>
+                                <p>Learn about satellites and space weather with your friendly satellite buddy!</p>
+                                <div class="quiz-info">
+                                    <span><i class="fas fa-question-circle"></i> 6 Questions</span>
+                                    <span><i class="fas fa-clock"></i> No time limit</span>
+                                </div>
+                                <button class="select-quiz-btn" data-quiz="zoomy">
+                                    <i class="fas fa-play"></i>
+                                    Start Quiz
+                                </button>
+                            </div>
+
+                            <!-- Gigi Quiz Card -->
+                            <div class="quiz-card" data-quiz="gigi">
+                                <div class="quiz-card-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <h3>Gigi the GPS: Lost in a Sunstorm Adventure!</h3>
+                                <p>Navigate through GPS adventures and learn how space weather affects navigation!</p>
+                                <div class="quiz-info">
+                                    <span><i class="fas fa-question-circle"></i> 6 Questions</span>
+                                    <span><i class="fas fa-clock"></i> No time limit</span>
+                                </div>
+                                <button class="select-quiz-btn" data-quiz="gigi">
+                                    <i class="fas fa-play"></i>
+                                    Start Quiz
+                                </button>
+                            </div>
+
+                            <!-- Aurora Annie Quiz Card -->
+                            <div class="quiz-card" data-quiz="aurora">
+                                <div class="quiz-card-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3>Aurora Annie: The Dancing Lights of Space</h3>
+                                <p>Dance with the aurora lights and learn about Earth's beautiful sky shows!</p>
+                                <div class="quiz-info">
+                                    <span><i class="fas fa-question-circle"></i> 5 Questions</span>
+                                    <span><i class="fas fa-clock"></i> No time limit</span>
+                                </div>
+                                <button class="select-quiz-btn" data-quiz="aurora">
+                                    <i class="fas fa-play"></i>
+                                    Start Quiz
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Start Screen -->
+                <div class="quiz-start" id="quizStart" style="display: none;">
+                    <div class="start-content">
+                        <div class="quiz-icon" id="quizIcon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h2 id="quizTitle">Hey, star explorer!</h2>
+                        <p id="quizDescription">Ready to zoom through the story of The Sun's Secret Storms? Answer these fun questions to see if you're a super space weather spotter like Mia and Leo. Pick the best answer for each one.</p>
+                        <div class="quiz-info">
+                            <div class="info-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span id="questionCount">5 Questions</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>No time limit</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Instant feedback</span>
+                            </div>
+                        </div>
+                        <div class="quiz-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Answers are at the bottom— no peeking!</span>
+                        </div>
+                        <button class="start-quiz-btn" id="startQuizBtn">
+                            <i class="fas fa-play"></i>
+                            Start Quiz
+                        </button>
+                        <button class="back-to-selection-btn" id="backToSelectionBtn">
+                            <i class="fas fa-arrow-left"></i>
+                            Back to Quiz Selection
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Questions -->
+                <div class="quiz-questions" id="quizQuestions" style="display: none;">
+                    <div class="quiz-header">
+                        <div class="quiz-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span id="currentQuestion">1</span> / <span id="totalQuestions">5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-container">
+                        <h3 class="question-text" id="questionText">Question text will appear here</h3>
+                        <div class="options-container" id="optionsContainer">
+                            <!-- Options will be dynamically generated -->
+                        </div>
+                    </div>
+
+                    <div class="quiz-feedback" id="quizFeedback" style="display: none;">
+                        <div class="feedback-content">
+                            <div class="feedback-icon" id="feedbackIcon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feedback-text" id="feedbackText">
+                                Correct! Great job!
+                            </div>
+                            <div class="correct-answer" id="correctAnswer" style="display: none;">
+                                <strong>Correct Answer:</strong> <span id="correctAnswerText"></span>
+                            </div>
+                        </div>
+                        <button class="next-question-btn" id="nextQuestionBtn">
+                            <i class="fas fa-arrow-right"></i>
+                            Next Question
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Results -->
+                <div class="quiz-results" id="quizResults" style="display: none;">
+                    <div class="results-content">
+                        <div class="results-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h2>Quiz Complete!</h2>
+                        <div class="score-display">
+                            <div class="score-circle">
+                                <span class="score-number" id="scoreNumber">0</span>
+                                <span class="score-total">/ 5</span>
+                            </div>
+                            <div class="score-text" id="scoreText">Amazing!</div>
+                        </div>
+                        <div class="results-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Correct: <strong id="correctCount">0</strong></span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-times-circle"></i>
+                                <span>Incorrect: <strong id="incorrectCount">0</strong></span>
+                            </div>
+                        </div>
+                        <div class="answer-key-section">
+                            <h3>Answer Key (Spoiler Alert!)</h3>
+                            <div class="answer-key">
+                                <div class="answer-item">
+                                    <span class="question-num">1.</span>
+                                    <span class="answer-text">b) Bubbling like hot soup on the stove</span>
+                                </div>
+                                <div class="answer-item">
+                                    <span class="question-num">2.</span>
+                                    <span class="answer-text">a) Giant fireworks pops</span>
+                                </div>
+                                <div class="answer-item">
+                                    <span class="question-num">3.</span>
+                                    <span class="answer-text">a) The magnetosphere</span>
+                                </div>
+                                <div class="answer-item">
+                                    <span class="question-num">4.</span>
+                                    <span class="answer-text">b) It gets dizzy and says "I'm lost!"</span>
+                                </div>
+                                <div class="answer-item">
+                                    <span class="question-num">5.</span>
+                                    <span class="answer-text">b) They watch with telescopes and give storm alerts</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results-actions">
+                            <button class="action-btn retry-btn" id="retryBtn">
+                                <i class="fas fa-redo"></i>
+                                Try Again
+                            </button>
+                            <button class="action-btn home-btn" onclick="window.location.href='index.html'">
+                                <i class="fas fa-home"></i>
+                                Back to Home
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
