@@ -19,7 +19,7 @@ const characterData = {
                         <p>Hey kids! I'm Zoomy, your friendly satellite buddy up in the sky. Picture this: I got built down on Earth in a big workshop, with shiny wings that soak up sunlight like a flower. Then—zoom!—a rocket shot me way up here. Now I loop around your planet all day, every 90 minutes. I take pics of beaches, mountains, and even your backyard swings. I zip those photos back to Earth so people can check weather or find lost puppies on their phones. Cool, right? That's me—Zoomy, the eye in the sky!</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=300&fit=crop" alt="Satellite in space">
+                        <img src="https://images-assets.nasa.gov/image/PIA03149/PIA03149~medium.jpg" alt="Satellite in space">
                         <div class="image-caption">NASA Image: Satellite orbiting Earth</div>
                     </div>
                 </div>
@@ -31,8 +31,8 @@ const characterData = {
 
                 <div class="story-section">
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=500&h=300&fit=crop" alt="Earth from space">
-                        <div class="image-caption">NASA Image: Earth from space</div>
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001208/GSFC_20171208_Archive_e001208~medium.jpg" alt="Earth from space with city lights and aurora">
+                        <div class="image-caption">NASA Image: Earth from space showing city lights and aurora - the view satellites like Zoomy see</div>
                     </div>
                     <div class="story-text">
                         <p>Up in space, it's peaceful. Stars twinkle like night-lights, and Earth looks like a big blue marble. But my sun friend? He's full of tricks. He bubbles like hot cocoa on the stove and blows out this thing called solar wind—a soft breeze of tiny zingy bits. Usually, it's no big deal, just a tickle.</p>
@@ -44,15 +44,15 @@ const characterData = {
                         <p>But sometimes the sun gets wild. Bang! He shoots out solar flares, like super bright fireworks. Or he puffs a giant bubble of speedy particles—that's a coronal mass ejection. It races across space and hits Earth's cozy shield, the magnetosphere. Think of it as an invisible bubble that guards us. When that bubble shakes, whoo boy—a geomagnetic storm!</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=500&h=300&fit=crop" alt="Solar flare">
-                        <div class="image-caption">NASA Image: Solar flare from the Sun</div>
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002107/GSFC_20171208_Archive_e002107~medium.jpg" alt="Solar flare from the Sun">
+                        <div class="image-caption">NASA Image: Powerful solar flare erupting from the Sun</div>
                     </div>
                 </div>
 
                 <div class="story-section">
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=300&fit=crop" alt="Satellite technology">
-                        <div class="image-caption">NASA Image: Satellite technology</div>
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001871/GSFC_20171208_Archive_e001871~orig.jpg" alt="Solar flare multi-wavelength view">
+                        <div class="image-caption">NASA Image: Solar flare observed at different wavelengths showing coronal loops and plasma structures</div>
                     </div>
                     <div class="story-text">
                         <p>That's when I feel it. "Whoops!" I wobble like I'm on a bumpy slide. Those zingy bits poke my insides—my computers and wires. I glitch out: beeps go funny, and I can't send my pics for a bit. It's like my radio gets static, and I go quiet. Down on Earth, it means your phone's map says, "Lost!" Cars turn the wrong way, planes over the snow hear no radio chatter, and house lights might blink like they're playing hide-and-seek.</p>
@@ -69,15 +69,15 @@ const characterData = {
                         <p>Don't fret, though. I'm made strong, with extra shields. And the smart folks on Earth? They watch the sun like hawks with telescopes. "Storm coming, Zoomy—chill out!" they say. I tuck in, take a quick snooze, and wait it out. The storm passes, and I zip right again. Plus, it leaves pretty gifts: auroras dancing in green and pink down below, like sky fireworks for you.</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=500&h=300&fit=crop" alt="Aurora lights">
-                        <div class="image-caption">NASA Image: Aurora lights from space</div>
+                        <img src="https://images-assets.nasa.gov/image/iss045e013851/iss045e013851~medium.jpg" alt="Aurora australis from space">
+                        <div class="image-caption">NASA Image: Aurora australis (southern lights) encircling Antarctica as seen from space - bright green aurora ring around the white continent</div>
                     </div>
                 </div>
 
                 <div class="story-section">
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=500&h=300&fit=crop" alt="Satellite network">
-                        <div class="image-caption">NASA Image: Satellite network around Earth</div>
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001208/GSFC_20171208_Archive_e001208~medium.jpg" alt="Earth from space with aurora and city lights">
+                        <div class="image-caption">NASA Image: Earth at night from space showing city lights and aurora - the spectacular view satellites like Zoomy capture from orbit</div>
                     </div>
                     <div class="story-text">
                         <p>Space weather rattles me sometimes, makes my signals fuzzy and my spins silly. But it shows how we're all linked—the sun's fun reaches me, then you. Without satellites like me, storms could surprise everyone more.</p>
@@ -102,7 +102,7 @@ const characterData = {
                         <p>Hey there, little adventurers! I'm Gigi, the zippy GPS guide zipped into your phone, car, or watch. I was born in a tech workshop down on Earth, full of maps and magic buttons. One day—beep-boop!—I got loaded up and ready to help you find ice cream shops or grandma's house. Now, I chat with satellites high up, like my buddy Zoomy, to pinpoint exactly where you are. "Turn left at the big tree—adventure ahead!" That's me, Gigi, your map buddy on the go!</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop" alt="GPS technology">
+                        <img src="https://images-assets.nasa.gov/image/VAFB-20161013-PH_RNB01_0004/VAFB-20161013-PH_RNB01_0004~medium.jpg" alt="GPS technology">
                         <div class="image-caption">NASA Image: GPS satellite technology</div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const characterData = {
 
                 <div class="story-section">
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=300&fit=crop" alt="Satellite communication">
+                        <img src="https://images-assets.nasa.gov/image/KSC-02pp1853/KSC-02pp1853~medium.jpg" alt="Satellite communication">
                         <div class="image-caption">NASA Image: Satellite communication network</div>
                     </div>
                     <div class="story-text">
@@ -127,14 +127,14 @@ const characterData = {
                         <p>But guess what? The sun up there has moods, just like us. It bubbles like fizzy juice and sends out solar wind—a sneaky breeze of zingy bits. Usually, it's a whisper. But when the sun gets extra bouncy? Flash! Solar flares pop like surprise confetti, and big bubbly blasts called coronal mass ejections race over. They zoom to Earth, bump our planet's shield (that's the magnetosphere, a cozy bubble), and—wiggle-wiggle!—start a geomagnetic storm. Everything gets a bit jumbly in the sky's air layer, called the ionosphere.</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=500&h=300&fit=crop" alt="Solar storm effects">
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001504/GSFC_20171208_Archive_e001504~small.jpg" alt="Solar storm effects">
                         <div class="image-caption">NASA Image: Solar storm affecting Earth</div>
                     </div>
                 </div>
 
                 <div class="story-section">
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="GPS navigation">
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001154/GSFC_20171208_Archive_e001154~small.jpg" alt="GPS navigation">
                         <div class="image-caption">NASA Image: GPS navigation system</div>
                     </div>
                     <div class="story-text">
@@ -152,7 +152,7 @@ const characterData = {
                         <p>But don't worry—I'm a tough cookie! Built with backup tricks, like extra signals or ground helpers. And the clever scientists? They watch the sun like hawks with telescopes and yell, "Storm alert—brace up!" They tweak us gadgets to stay steady, maybe switch paths or wait it out. The storm puffs by, leaving sparkly auroras waving below, like "Sorry for the tickle!"</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=500&h=300&fit=crop" alt="Aurora from space">
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002108/GSFC_20171208_Archive_e002108~orig.jpg" alt="Aurora from space">
                         <div class="image-caption">NASA Image: Aurora lights from space</div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@ const characterData = {
                         <p>Hey, little dreamers! I'm Annie, the sparkly aurora girl who lives way up in the chilly north, where the sky turns into a big playground at night. Picture me: a swirly ribbon of green and pink, waving like a magic scarf in the wind. I wasn't always up here—I started as tiny zingy bits from the sun, zooming through space on a solar wind ride. That's space weather, you see—a fun breeze from our sunny friend that hugs Earth. When it bumps our planet's cozy shield, the magnetosphere (like an invisible bubble party), poof! I light up and dance!</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=500&h=300&fit=crop" alt="Aurora lights">
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001180/GSFC_20171208_Archive_e001180~medium.jpg" alt="Aurora lights">
                         <div class="image-caption">NASA Image: Aurora lights from space</div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@ const characterData = {
 
                 <div class="story-section">
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=500&h=300&fit=crop" alt="Solar wind and magnetosphere">
+                        <img src="https://images-assets.nasa.gov/image/iss023e058455/iss023e058455~medium.jpg" alt="Solar wind and magnetosphere">
                         <div class="image-caption">NASA Image: Solar wind interacting with Earth's magnetosphere</div>
                     </div>
                     <div class="story-text">
@@ -201,7 +201,7 @@ const characterData = {
                         <p>One frosty evening, a big sun sneeze hit. "Whee!" I giggled as the geomagnetic storm shook everything. Particles partied in the air, making me brighter than a birthday cake. Down below, kids like you bundled in coats, gasping, "Look—sky fireworks!" Farmers saw my glow over snowy fields, pilots flying high waved from planes, and even whales in the ocean splashed hello (or so I dream). But shh—I'm shy during the day, hiding till dark.</p>
                     </div>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Aurora from Earth">
+                        <img src="https://images-assets.nasa.gov/image/PIA21855/PIA21855~small.jpg" alt="Aurora from Earth">
                         <div class="image-caption">NASA Image: Aurora viewed from Earth's surface</div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@ const characterData = {
 
                 <div class="story-section">
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=300&fit=crop" alt="Space weather monitoring">
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000026/GSFC_20171208_Archive_e000026~medium.jpg" alt="Space weather monitoring">
                         <div class="image-caption">NASA Image: Space weather monitoring from satellites</div>
                     </div>
                     <div class="story-text">

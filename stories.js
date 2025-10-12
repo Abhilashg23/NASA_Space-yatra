@@ -17,7 +17,7 @@ const storyData = {
                     <h3>Chapter 1: Meet Farmer Sam</h3>
                     <div class="story-image">
                         <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=500&h=300&fit=crop" alt="Farmer Sam">
-                        <div class="image-caption">Farmer Sam working in his fields</div>
+                        <div class="image-caption">Farmer Sam working in his fields with modern farming equipment</div>
                     </div>
                     <p>Hello, kids! 👋</p>
                     <p>My name is Sam, and I'm 42 years old. I'm a farmer. Every day I wake up early to take care of my fields, my crops, and my animals. I love watching the sunrise while I'm out on the farm — the Sun feels like my best friend. 🌞🌱</p>
@@ -28,7 +28,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 2: What is Space Weather?</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=500&h=300&fit=crop" alt="Solar flares and CMEs">
+                        <img src="https://images-assets.nasa.gov/image/0300802/0300802~medium.jpg" alt="Solar flares and CMEs">
                         <div class="image-caption">NASA Image: Solar flares and coronal mass ejections</div>
                     </div>
                     <p>Now, you might be thinking, 'Sam, isn't weather just rain, clouds, or sunshine?' Well, that's Earth weather. Space weather is different. It happens when the Sun sends out giant bursts of energy, like solar flares and coronal mass ejections (CMEs). These storms race through space and reach Earth. And believe it or not, they affect me right here on my farm!</p>
@@ -50,7 +50,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 4: The Bigger Picture</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Farm fields">
+                        <img src="https://media.istockphoto.com/id/978754758/photo/vineyard-sunset.jpg?s=612x612&w=0&k=20&c=xvJZ_Ldp_n_Ev0LjaNY_vgrLvdB_dBrT8SdRfPn6zd0=" alt="Farm fields">
                         <div class="image-caption">Beautiful farm fields and countryside</div>
                     </div>
                     <p>Space weather is tricky. It makes farming harder when I can't rely on GPS or weather data. But I also know it's not just me. Pilots, astronauts, and even people using the internet face problems during big solar storms.</p>
@@ -78,8 +78,8 @@ const storyData = {
                 content: `
                     <h3>Chapter 1: Meet Captain Maya</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&h=300&fit=crop" alt="Captain Maya">
-                        <div class="image-caption">Captain Maya in her pilot uniform</div>
+                        <img src="https://images-assets.nasa.gov/image/jsc2025e012272/jsc2025e012272~medium.jpg" alt="Captain Maya">
+                        <div class="image-caption">Captain Maya standing confidently in front of her airplane</div>
                     </div>
                     <p>Hello, young explorers! 👋</p>
                     <p>I'm Captain Maya, and I'm 38 years old. I fly big airplanes high up in the sky. Flying has always been my dream, and now I get to soar above the clouds every day. From my cockpit, I see the sunrise before anyone else, and sometimes I even fly under the stars. 🌅✨</p>
@@ -90,7 +90,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 2: What is Space Weather?</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=500&h=300&fit=crop" alt="Solar flares and CMEs">
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001554/GSFC_20171208_Archive_e001554~small.jpg" alt="Solar flares and CMEs">
                         <div class="image-caption">NASA Image: Solar flares and coronal mass ejections</div>
                     </div>
                     <p>Space weather happens when the Sun throws out giant bursts of energy — flashes of light called solar flares and huge clouds of particles called CMEs. These storms race through space and reach Earth, shaking up our technology.</p>
@@ -102,7 +102,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 3: Navigation Problems</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=500&h=300&fit=crop" alt="Airplane cockpit">
+                        <img src="https://images-assets.nasa.gov/image/s110e5067/s110e5067~medium.jpg" alt="Airplane cockpit">
                         <div class="image-caption">Airplane cockpit with navigation instruments</div>
                     </div>
                     <p>Another time, during a solar storm, our GPS became unreliable. Imagine trying to fly across oceans without a clear map! My instruments got confused, and I had to depend on my training and backup systems.</p>
@@ -113,7 +113,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 4: The Beautiful Aurora</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=500&h=300&fit=crop" alt="Aurora from airplane">
+                        <img src="https://images-assets.nasa.gov/image/PIA11396/PIA11396~small.jpg" alt="Aurora from airplane">
                         <div class="image-caption">Aurora lights viewed from airplane window</div>
                     </div>
                     <p>But it's not all bad. During one flight at night, as we passed near the polar regions, I looked out of the cockpit window and saw the most magical sight: the sky glowing green and purple with auroras. It looked like curtains of light dancing just for us. The passengers gasped in wonder, and I felt like space weather had given us a gift.</p>
@@ -124,7 +124,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 5: Signing Off</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&h=300&fit=crop" alt="Captain Maya waving">
+                        <img src="https://images-assets.nasa.gov/image/201409250011HQ/201409250011HQ~medium.jpg" alt="Captain Maya waving">
                         <div class="image-caption">Captain Maya waving goodbye</div>
                     </div>
                     <p>So kids, when you look up at an airplane in the sky, remember: we pilots don't just face clouds and winds. We also face the Sun's invisible storms. Space weather may be far away, but it travels right into my cockpit. And that's why understanding it helps keep everyone safe — on Earth and in the air.</p>
@@ -140,8 +140,8 @@ const storyData = {
                 content: `
                     <h3>Chapter 1: Hello from Space!</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=500&h=300&fit=crop" alt="International Space Station">
-                        <div class="image-caption">NASA Image: International Space Station orbiting Earth</div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYcZFWRrNhhOEX-PfP84nuU0-MGZtpH_8EPA&s" alt="Commander Alex in space">
+                        <div class="image-caption">Commander Alex floating in space with Earth in background</div>
                     </div>
                     <p>Hello, Earth kids! 👋</p>
                     <p>I'm Commander Alex, and I'm 35 years old. Right now, I'm living far above you on the International Space Station. My home zooms around Earth almost 16 times every single day! From up here, I can see the blue oceans, white clouds, and even the green glow of the northern lights. It's beautiful. 🌍✨</p>
@@ -152,7 +152,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 2: The Sun Gets Excited</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=500&h=300&fit=crop" alt="Solar flares and CMEs">
+                        <img src="https://images-assets.nasa.gov/image/0300802/0300802~medium.jpg" alt="Solar flares and CMEs">
                         <div class="image-caption">NASA Image: Solar flares and coronal mass ejections</div>
                     </div>
                     <p>Space weather is what happens when the Sun gets too excited. Sometimes the Sun bursts out with giant flashes of light called solar flares, or throws huge clouds of particles called coronal mass ejections (CMEs). These storms travel super fast, racing toward Earth and me up here in space.</p>
@@ -164,7 +164,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 3: Communication Problems</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=500&h=300&fit=crop" alt="Radio communication">
+                        <img src="https://images-assets.nasa.gov/image/STS059-16-028/STS059-16-028~medium.jpg" alt="Radio communication">
                         <div class="image-caption">NASA Image: Radio communication equipment</div>
                     </div>
                     <p>Another time, a strong solar flare made our radios crackle and glitch. Talking to mission control on Earth became difficult. Imagine trying to call your parents, but the phone keeps cutting out — that's how it feels when space weather messes with our communications.</p>
@@ -181,7 +181,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 4: The Beautiful Aurora</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=500&h=300&fit=crop" alt="Aurora from space">
+                        <img src="https://www.cnet.com/a/img/resize/85a2f418476754376e5738034eb6ec28c92213b8/hub/2024/10/09/eee7ab84-55c7-4d78-9b69-c36aa16f2ed4/dominickaurora.jpg?auto=webp&fit=crop&height=675&precrop=2184,1227,x0,y559&width=1200" alt="Aurora from space">
                         <div class="image-caption">NASA Image: Aurora lights viewed from space</div>
                     </div>
                     <p>But there's also something wonderful about space weather. When those Sun particles touch Earth's atmosphere, they create glowing lights in the sky — auroras. From space, I see them wrapping Earth like magical crowns of green and purple. They are the most beautiful things I've ever seen.</p>
@@ -193,7 +193,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 5: Signing Off</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=500&h=300&fit=crop" alt="Commander Alex waving">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYcZFWRrNhhOEX-PfP84nuU0-MGZtpH_8EPA&s" alt="Commander Alex waving">
                         <div class="image-caption">NASA Image: Commander Alex waving from space</div>
                     </div>
                     <p>This is Commander Alex, signing off — and reminding you: the Sun is full of surprises! 🚀🌞</p>
@@ -210,8 +210,8 @@ const storyData = {
                 content: `
                     <h3>Chapter 1: A Cozy Earth Morning</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Sunrise over hills">
-                        <div class="image-caption">Beautiful sunrise over peaceful hills</div>
+                        <img src="https://images-assets.nasa.gov/image/SSC-20070411-S00958/SSC-20070411-S00958~medium.jpg" alt="Children discovering the Sun's secrets through a telescope">
+                        <div class="image-caption">Children discovering the Sun's secrets through a telescope</div>
                     </div>
                     <p>Once upon a time, on a cozy Earth morning, the Sun peeked over the hills like a big, smiling face. It warmed the grass, helped flowers bloom, and made everyone on Earth feel happy and full of energy.</p>
                     <p>"The Sun is so nice and quiet," thought little Mia, a girl with curly hair and a love for stars. She was playing in her garden with her best friend Leo, a boy who dreamed of flying rockets.</p>
@@ -222,7 +222,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 2: The Sun's Secret</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=500&h=300&fit=crop" alt="Children looking through telescope">
+                        <img src="https://images-assets.nasa.gov/image/SSC-20070411-S00958/SSC-20070411-S00958~medium.jpg" alt="Children discovering the Sun's secrets through a telescope">
                         <div class="image-caption">Children discovering the Sun's secrets through a telescope</div>
                     </div>
                     <p>Mia and Leo looked through Mia's toy telescope. "Whoa!" Leo said. "The Sun isn't calm—it's bubbling like hot soup on the stove! Look at those flashes!"</p>
@@ -234,8 +234,8 @@ const storyData = {
                 content: `
                     <h3>Chapter 3: Earth's Magic Shield</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1614728423163-35fb642ecfe5?w=500&h=300&fit=crop" alt="Earth with magnetic field">
-                        <div class="image-caption">NASA Image: Earth's magnetic field protecting our planet</div>
+                        <img src="https://images-assets.nasa.gov/image/PIA06347/PIA06347~orig.jpg" alt="Earth with magnetic field">
+                        <div class="image-caption">Earth's magnetic field protecting our planet</div>
                     </div>
                     <p>"Yep! But you can't see it—it's invisible magic," Mia said. Earth has a special bubble shield around it, called the magnetosphere. It's like an invisible force field that keeps us safe.</p>
                     <p>When the Sun's storm clouds hit it --BOOM! -- the shield shakes like a big drum. Bang, bang!</p>
@@ -246,8 +246,8 @@ const storyData = {
                 content: `
                     <h3>Chapter 4: Space Weather Effects</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=300&fit=crop" alt="Airplane and technology">
-                        <div class="image-caption">NASA Image: Technology affected by space weather</div>
+                        <img src="https://images-assets.nasa.gov/image/KSC-06pd0187/KSC-06pd0187~medium.jpg" alt="Technology affected by space weather">
+                        <div class="image-caption">Technology affected by space weather</div>
                     </div>
                     <p>Airplanes over the cold north might hear radio silence—no chatter from the pilots. Power lines on the ground could buzz too much and cause lights to flicker, like a spooky Halloween party.</p>
                     <p>And brave astronauts in space stations? They hide in safe spots, like playing hide-and-seek from the Sun's tickly energy.</p>
@@ -258,8 +258,8 @@ const storyData = {
                 content: `
                     <h3>Chapter 5: The Beautiful Aurora</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=500&h=300&fit=crop" alt="Northern lights aurora">
-                        <div class="image-caption">NASA Image: Beautiful Northern Lights aurora</div>
+                        <img src="https://images-assets.nasa.gov/image/iss030e119777/iss030e119777~medium.jpg" alt="Northern lights aurora">
+                        <div class="image-caption">Beautiful Northern Lights aurora</div>
                     </div>
                     <p>But space weather isn't all scary—it's super pretty too! When those speedy Sun bits bump into Earth's air, they make the sky glow with colors.</p>
                     <p>Green waves, pink ribbons, purple swirls, and red sparkles dance like fairy curtains. That's the aurora! Northern lights up north, southern lights down south.</p>
@@ -270,7 +270,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 6: Why It Matters</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop" alt="Technology and gadgets">
+                        <img src="https://images-assets.nasa.gov/image/KSC-2012-2039/KSC-2012-2039~medium.jpg" alt="Technology and gadgets">
                         <div class="image-caption">Modern technology and gadgets we use daily</div>
                     </div>
                     <p>"Why does it matter?" Mia asked, pointing to her phone and the lights in her house. "Space weather comes from millions of miles away, but it touches our fun every day. It can wiggle our gadgets and toys!"</p>
@@ -282,7 +282,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 7: Sun Storm Spotters</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=300&fit=crop" alt="Children drawing and playing">
+                        <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001646/GSFC_20171208_Archive_e001646~medium.jpg" alt="Children drawing and learning about space weather">
                         <div class="image-caption">Children drawing and learning about space weather</div>
                     </div>
                     <p>So, Mia and Leo made a game: Sun Storm Spotters! They drew the bubbling Sun, shaky shields, and dancing auroras on paper.</p>
@@ -294,7 +294,7 @@ const storyData = {
                 content: `
                     <h3>Chapter 8: Your Turn!</h3>
                     <div class="story-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Children looking at stars">
+                        <img src="https://media.istockphoto.com/id/503458062/photo/childrens-imagination.jpg?s=612x612&w=0&k=20&c=QZ0OULz8Lb-RgZHZ8y8CZmj-PjG-F-UjCBsqWg7JD1Q=" alt="Children looking at stars">
                         <div class="image-caption">Children looking up at the stars and dreaming</div>
                     </div>
                     <p>What about you, star chaser? If you could talk to the Sun, what question would you ask? "Tell me a storm story!" or "Can I visit your bubbly party?"</p>
