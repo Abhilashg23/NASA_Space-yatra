@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#000011">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Live Space Weather Data - Space Yatra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="live-data.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-section">
+                <div class="menu-button" id="menuButton">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="menu-text" id="menuText">Explore Here</div>
+            </div>
+            <div class="nav-dropdown" id="navDropdown">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="space-weather.html" class="nav-item">What is Space Weather?</a>
+                <a href="impacts.html" class="nav-item">Impacts </a>
+                <a href="stories.html" class="nav-item">Stories </a>
+                <a href="live-data.html" class="nav-item">Live Space Weather Data</a>
+                <a href="quiz.html" class="nav-item">Fun Zone (Quiz)</a>
+                <a href="#" class="nav-item" id="aboutUsMenuItem">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About Us Panel -->
+    <div class="about-panel" id="aboutPanel">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>About Us</h2>
+                <button class="close-button" id="closeButton">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="team-info">
+                <h3>Team Name: Bit2Byte</h3>
+                <div class="team-members">
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Abhilash G</span>
+                        <span class="email">abhilashg9113@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Anirudh S Negekar</span>
+                        <span class="email">katoki317@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Prajnavi</span>
+                        <span class="email">prajnavimuniyal@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Tulasi Shetty</span>
+                        <span class="email">tulasishettyhebri@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Vaishnavi N Acharya</span>
+                        <span class="email">nvaishnavi622@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.location.href='index.html'">
+        <i class="fas fa-arrow-left"></i>
+        Back to Home
+    </button>
+
+    <!-- Main Content -->
+    <main class="live-data-main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="page-title">Live Space Weather Data</h1>
+                <p class="page-subtitle">Real-time space weather information from NASA and NOAA!</p>
+            </div>
+            <div class="data-elements">
+                <div class="data-wave wave-1"></div>
+                <div class="data-wave wave-2"></div>
+                <div class="data-wave wave-3"></div>
+            </div>
+        </section>
+
+        <!-- Live Data Dashboard -->
+        <section class="dashboard-section">
+            <div class="container">
+                <!-- Weather Today Card -->
+                <div class="weather-today-card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-sun"></i> Weather Today in Space</h2>
+                        <div class="last-updated" id="lastUpdated">Last updated: --</div>
+                    </div>
+                    <div class="weather-status">
+                        <div class="status-icon" id="statusIcon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="status-text" id="statusText">Calm</div>
+                        <div class="status-description" id="statusDescription">Space weather is calm today</div>
+                    </div>
+                </div>
+
+                <!-- Real-time Data Grid -->
+                <div class="data-grid">
+                    <!-- Solar Wind Speed -->
+                    <div class="data-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-wind"></i> Solar Wind Speed</h3>
+                            <div class="data-source">DSCOVR</div>
+                        </div>
+                        <div class="data-value">
+                            <span class="value" id="windSpeed">--</span>
+                            <span class="unit">km/s</span>
+                        </div>
+                        <div class="data-gauge">
+                            <div class="gauge-container">
+                                <div class="gauge-fill" id="windGauge"></div>
+                            </div>
+                            <div class="gauge-labels">
+                                <span>Slow</span>
+                                <span>Fast</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solar Wind Density -->
+                    <div class="data-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-atom"></i> Solar Wind Density</h3>
+                            <div class="data-source">DSCOVR</div>
+                        </div>
+                        <div class="data-value">
+                            <span class="value" id="windDensity">--</span>
+                            <span class="unit">protons/cm³</span>
+                        </div>
+                        <div class="data-gauge">
+                            <div class="gauge-container">
+                                <div class="gauge-fill" id="densityGauge"></div>
+                            </div>
+                            <div class="gauge-labels">
+                                <span>Low</span>
+                                <span>High</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kp Index -->
+                    <div class="data-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-chart-line"></i> Geomagnetic Storm Index</h3>
+                            <div class="data-source">NOAA</div>
+                        </div>
+                        <div class="data-value">
+                            <span class="value" id="kpIndex">--</span>
+                            <span class="unit">Kp</span>
+                        </div>
+                        <div class="kp-gauge">
+                            <div class="kp-scale">
+                                <div class="kp-bar" data-level="0">0</div>
+                                <div class="kp-bar" data-level="1">1</div>
+                                <div class="kp-bar" data-level="2">2</div>
+                                <div class="kp-bar" data-level="3">3</div>
+                                <div class="kp-bar" data-level="4">4</div>
+                                <div class="kp-bar" data-level="5">5</div>
+                                <div class="kp-bar" data-level="6">6</div>
+                                <div class="kp-bar" data-level="7">7</div>
+                                <div class="kp-bar" data-level="8">8</div>
+                                <div class="kp-bar" data-level="9">9</div>
+                            </div>
+                            <div class="kp-indicator" id="kpIndicator"></div>
+                        </div>
+                    </div>
+
+                    <!-- Sunspot Number -->
+                    <div class="data-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-circle"></i> Sunspot Number</h3>
+                            <div class="data-source">NOAA</div>
+                        </div>
+                        <div class="data-value">
+                            <span class="value" id="sunspotNumber">--</span>
+                            <span class="unit">spots</span>
+                        </div>
+                        <div class="sunspot-visual">
+                            <div class="sun-circle">
+                                <div class="sunspot" id="sunspot1"></div>
+                                <div class="sunspot" id="sunspot2"></div>
+                                <div class="sunspot" id="sunspot3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Visualizations -->
+                <div class="visualizations-section">
+                    <h2 class="section-title">Interactive Visualizations</h2>
+                    
+                    <div class="viz-grid">
+                        <!-- Rotating Sun Model -->
+                        <div class="viz-card">
+                            <div class="viz-header">
+                                <h3><i class="fas fa-sun"></i> Active Sun Model</h3>
+                                <button class="viz-control" id="sunToggle">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="sun-model">
+                                <div class="sun-core" id="sunCore">
+                                    <div class="sun-flare flare-1"></div>
+                                    <div class="sun-flare flare-2"></div>
+                                    <div class="sun-flare flare-3"></div>
+                                </div>
+                                <div class="sun-info">
+                                    <div class="info-item">
+                                        <span class="label">Active Regions:</span>
+                                        <span class="value" id="activeRegions">3</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="label">Solar Flares:</span>
+                                        <span class="value" id="solarFlares">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earth's Magnetosphere -->
+                        <div class="viz-card">
+                            <div class="viz-header">
+                                <h3><i class="fas fa-globe"></i> Earth's Magnetosphere</h3>
+                                <button class="viz-control" id="magnetToggle">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="magnetosphere-model">
+                                <div class="earth-center">
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                                <div class="magnetosphere-field" id="magnetField">
+                                    <div class="field-line line-1"></div>
+                                    <div class="field-line line-2"></div>
+                                    <div class="field-line line-3"></div>
+                                    <div class="field-line line-4"></div>
+                                </div>
+                                <div class="solar-wind" id="solarWind">
+                                    <div class="wind-particle"></div>
+                                    <div class="wind-particle"></div>
+                                    <div class="wind-particle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aurora Forecast Map -->
+                    <div class="aurora-section">
+                        <h3><i class="fas fa-palette"></i> Aurora Forecast Map</h3>
+                        <div class="aurora-map">
+                            <div class="map-container">
+                                <div class="world-map">
+                                    <div class="aurora-region region-1"></div>
+                                    <div class="aurora-region region-2"></div>
+                                    <div class="aurora-region region-3"></div>
+                                    <div class="aurora-region region-4"></div>
+                                </div>
+                                <div class="map-legend">
+                                    <div class="legend-item">
+                                        <div class="legend-color low"></div>
+                                        <span>Low Activity</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color medium"></div>
+                                        <span>Medium Activity</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color high"></div>
+                                        <span>High Activity</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aurora-info">
+                                <div class="info-card">
+                                    <h4>Current Aurora Activity</h4>
+                                    <div class="activity-level" id="auroraActivity">Medium</div>
+                                    <div class="activity-description" id="auroraDescription">Aurora may be visible in northern regions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solar Wind Trends Chart -->
+                    <div class="chart-section">
+                        <h3><i class="fas fa-chart-area"></i> Solar Wind Trends (24 Hours)</h3>
+                        <div class="chart-container">
+                            <canvas id="solarWindChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alert System -->
+                <div class="alert-system">
+                    <div class="alert-card" id="alertCard" style="display: none;">
+                        <div class="alert-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h4 id="alertTitle">Solar Storm Alert!</h4>
+                            <p id="alertMessage">A significant solar storm is approaching Earth. Astronauts, take care!</p>
+                        </div>
+                        <button class="alert-close" id="alertClose">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="live-data.js"></script>
+</body>
+</html>

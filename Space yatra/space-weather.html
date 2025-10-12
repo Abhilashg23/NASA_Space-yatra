@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#000011">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>What is Space Weather? - Space Yatra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="space-weather.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-section">
+                <div class="menu-button" id="menuButton">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="menu-text" id="menuText">Explore Here</div>
+            </div>
+            <div class="nav-dropdown" id="navDropdown">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="space-weather.html" class="nav-item">What is Space Weather?</a>
+                <a href="impacts.html" class="nav-item">Impacts </a>
+                <a href="stories.html" class="nav-item">Stories </a>
+                <a href="live-data.html" class="nav-item">Live Space Weather Data</a>
+                <a href="quiz.html" class="nav-item">Fun Zone (Quiz)</a>
+                <a href="#" class="nav-item" id="aboutUsMenuItem">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About Us Panel -->
+    <div class="about-panel" id="aboutPanel">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>About Us</h2>
+                <button class="close-button" id="closeButton">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="team-info">
+                <h3>Team Name: Bit2Byte</h3>
+                <div class="team-members">
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Abhilash G</span>
+                        <span class="email">abhilashg9113@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Anirudh S Negekar</span>
+                        <span class="email">katoki317@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Prajnavi</span>
+                        <span class="email">prajnavimuniyal@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Tulasi Shetty</span>
+                        <span class="email">tulasishettyhebri@gmail.com</span>
+                    </div>
+                    <div class="member">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Vaishnavi N Acharya</span>
+                        <span class="email">nvaishnavi622@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.location.href='index.html'">
+        <i class="fas fa-arrow-left"></i>
+        Back to Home
+    </button>
+
+    <!-- Main Content -->
+    <main class="space-weather-main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="page-title">What is Space Weather?</h1>
+                <p class="page-subtitle">Discover the amazing world of space weather and how it affects our planet!</p>
+            </div>
+            <div class="animated-sun">
+                <div class="sun-core"></div>
+                <div class="sun-flares"></div>
+            </div>
+        </section>
+
+        <!-- Educational Content -->
+        <section class="content-section">
+            <div class="container">
+                <!-- Solar Flares -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-bolt"></i>
+                        <h2>Solar Flares</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=400&h=300&fit=crop" alt="Solar Flare" class="nasa-image">
+                            <div class="image-overlay">
+                                <span class="image-caption">NASA Solar Flare Image</span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <p>Solar flares are sudden bursts of energy from the Sun! They're like giant explosions that release light, X-rays, and particles into space.</p>
+                            <div class="fun-fact">
+                                <i class="fas fa-lightbulb"></i>
+                                <strong>Fun Fact:</strong> A single solar flare can release as much energy as millions of atomic bombs!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coronal Mass Ejections -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-wind"></i>
+                        <h2>Coronal Mass Ejections (CMEs)</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=400&h=300&fit=crop" alt="CME" class="nasa-image">
+                            <div class="image-overlay">
+                                <span class="image-caption">NASA CME Image</span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <p>CMEs are huge clouds of solar particles that the Sun shoots into space! They can travel millions of miles and reach Earth in just a few days.</p>
+                            <div class="fun-fact">
+                                <i class="fas fa-lightbulb"></i>
+                                <strong>Fun Fact:</strong> CMEs can be bigger than the Sun itself!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solar Wind -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-stream"></i>
+                        <h2>Solar Wind</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=400&h=300&fit=crop" alt="Solar Wind" class="nasa-image">
+                            <div class="image-overlay">
+                                <span class="image-caption">NASA Solar Wind Visualization</span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <p>The solar wind is a stream of charged particles constantly flowing from the Sun! It's like a gentle breeze, but made of tiny particles.</p>
+                            <div class="fun-fact">
+                                <i class="fas fa-lightbulb"></i>
+                                <strong>Fun Fact:</strong> The solar wind travels at speeds of up to 500 miles per second!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Diagram -->
+                <div class="interactive-section">
+                    <h2>How Space Weather Works</h2>
+                    <div class="diagram-container">
+                        <div class="sun-diagram">
+                            <div class="sun-center">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div class="solar-flare flare-1"></div>
+                            <div class="solar-flare flare-2"></div>
+                            <div class="solar-flare flare-3"></div>
+                        </div>
+                        <div class="earth-diagram">
+                            <div class="earth-center">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="magnetosphere"></div>
+                        </div>
+                        <div class="particle-stream"></div>
+                    </div>
+                    <div class="diagram-labels">
+                        <div class="label sun-label">Sun</div>
+                        <div class="label earth-label">Solar Particles</div>
+                        <div class="label particles-label">Earth</div>
+                    </div>
+                </div>
+
+                <!-- Effects Section -->
+                <div class="effects-section">
+                    <h2>What Happens When Space Weather Reaches Earth?</h2>
+                    <div class="effects-grid">
+                        <div class="effect-card">
+                            <div class="effect-icon">
+                                <i class="fas fa-satellite"></i>
+                            </div>
+                            <h3>Satellites</h3>
+                            <p>Space weather can affect satellites and make them work differently!</p>
+                        </div>
+                        <div class="effect-card">
+                            <div class="effect-icon">
+                                <i class="fas fa-signal"></i>
+                            </div>
+                            <h3>Radio Signals</h3>
+                            <p>It can make radio signals weaker or stronger!</p>
+                        </div>
+                        <div class="effect-card">
+                            <div class="effect-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Aurora</h3>
+                            <p>It creates beautiful lights in the sky called aurora!</p>
+                        </div>
+                        <div class="effect-card">
+                            <div class="effect-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Power Grids</h3>
+                            <p>It can sometimes affect power lines on Earth!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="space-weather.js"></script>
+</body>
+</html>

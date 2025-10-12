@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Panel Test - Space Yatra</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #0c0c0c;
+            color: white;
+        }
+        
+        .test-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .test-button:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Ensure About Panel stays on right side - override any conflicts */
+        body .about-panel {
+            position: fixed !important;
+            top: 0 !important;
+            right: -400px !important;
+            left: auto !important;
+            width: 400px !important;
+            height: 100vh !important;
+            transform: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: rgba(0, 0, 17, 0.95) !important;
+            backdrop-filter: blur(15px) !important;
+            border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+            z-index: 999 !important;
+            transition: right 0.4s ease !important;
+        }
+
+        body .about-panel.active {
+            right: 0 !important;
+            left: auto !important;
+            transform: none !important;
+        }
+        
+        .about-content {
+            padding: 30px;
+            height: 100%;
+            overflow-y: auto;
+        }
+        
+        .about-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .close-button {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .close-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(90deg);
+        }
+        
+        .test-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Us Panel Test</h1>
+    <div class="test-info">
+        <p><strong>Test Instructions:</strong></p>
+        <ol>
+            <li>Click "About Us" button</li>
+            <li>Panel should slide in from the RIGHT side</li>
+            <li>Close the panel</li>
+            <li>Panel should slide back to the RIGHT side (not left)</li>
+        </ol>
+    </div>
+    
+    <button class="test-button" id="aboutButton">
+        <i>ℹ️</i> About Us
+    </button>
+
+    <!-- About Us Panel -->
+    <div class="about-panel" id="aboutPanel">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>About Us</h2>
+                <button class="close-button" id="closeButton">
+                    ✕
+                </button>
+            </div>
+            <div class="team-info">
+                <h3>Team Name: Bit2Byte</h3>
+                <p>This panel should stay anchored to the RIGHT side of the screen.</p>
+                <p>It should slide in from the right and slide back to the right when closed.</p>
+                <p>If it moves to the left corner, there's still a positioning issue.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // About Us Panel Toggle
+        const aboutButton = document.getElementById('aboutButton');
+        const aboutPanel = document.getElementById('aboutPanel');
+        const closeButton = document.getElementById('closeButton');
+        
+        aboutButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Ensure panel is properly positioned
+            aboutPanel.style.position = 'fixed';
+            aboutPanel.style.top = '0';
+            aboutPanel.style.left = 'auto';
+            aboutPanel.style.right = '0';
+            aboutPanel.style.transform = 'none';
+            
+            aboutPanel.classList.add('active');
+            console.log('About panel opened - should be on RIGHT side');
+        });
+        
+        closeButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            aboutPanel.classList.remove('active');
+            
+            // Ensure panel returns to proper hidden position
+            aboutPanel.style.right = '-400px';
+            aboutPanel.style.transform = 'none';
+            
+            console.log('About panel closed - should slide back to RIGHT');
+        });
+        
+        // Close panel when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!aboutButton.contains(event.target) && !aboutPanel.contains(event.target)) {
+                aboutPanel.classList.remove('active');
+                aboutPanel.style.right = '-400px';
+                aboutPanel.style.transform = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
